@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.GymController">
+   <children>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="354.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="62.0" text="Назад">
+         <font>
+            <Font name="Chiller" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="521.0" layoutY="-41.0" prefHeight="97.0" prefWidth="178.0" text="Gym" textFill="#2396af">
+         <font>
+            <Font name="Chiller" size="96.0" />
+         </font>
+      </Label>
+      <Accordion>
+        <panes>
+          <TitledPane animated="false" prefHeight="330.0" prefWidth="202.0" text="Выберите цель">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Accordion layoutX="-1.0" />
+                        <Accordion layoutX="7.0" />
+                        <Accordion layoutX="10.0" prefHeight="306.0" prefWidth="191.0">
+                          <panes>
+                            <TitledPane animated="false" prefHeight="253.0" prefWidth="202.0" text="Похудение">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="201.0">
+                                       <children>
+                                          <Accordion layoutX="-1.0" />
+                                          <Accordion layoutX="12.0" prefHeight="230.0" prefWidth="190.0">
+                                            <panes>
+                                              <TitledPane animated="false" prefHeight="130.0" prefWidth="182.0" text="Легкий уровень">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="dietEasyLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="dietEasyHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="dietEasyPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="dietEasyBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children></AnchorPane>
+                                                </content>
+                                              </TitledPane>
+                                                <TitledPane animated="false" prefHeight="130.0" prefWidth="202.0" text="Средний уровень">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="dietMediumHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="dietMediumLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="dietMediumPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="dietMediumBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" prefHeight="0.0" prefWidth="202.0" text="Сложный уровень">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="dietHardHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="dietHardLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="dietHardPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="dietHardBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                            </panes>
+                                          </Accordion>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                              <TitledPane animated="false" prefHeight="253.0" prefWidth="202.0" text="Растяжка">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="201.0">
+                                       <children>
+                                          <Accordion layoutX="-1.0" />
+                                          <Accordion layoutX="12.0" prefHeight="230.0" prefWidth="178.0">
+                                             <panes>
+                                                <TitledPane animated="false" prefHeight="130.0" prefWidth="202.0" text="Легкий уровень">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="stretchingEasyHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="stretchingEasyLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="stretchingEasyPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="stretchingEasyBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" prefHeight="130.0" prefWidth="202.0" text="Средний уровень">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="stretchingMediumHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="stretchingMediumLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="stretchingMediumPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="stretchingMediumBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" prefHeight="0.0" prefWidth="202.0" text="Сложный уровень">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="stretchingHardHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="stretchingHardLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="stretchingHardPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="stretchingHardBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                             </panes>
+                                          </Accordion>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" prefHeight="253.0" prefWidth="202.0" text="Набор массы">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="201.0">
+                                       <children>
+                                          <Accordion layoutX="-1.0" />
+                                          <Accordion layoutX="11.0" prefHeight="230.0" prefWidth="178.0">
+                                             <panes>
+                                                <TitledPane animated="false" prefHeight="130.0" prefWidth="202.0" text="Легкий уровень">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="massEasyHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="massEasyLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="massEasyPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="massEasyBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" prefHeight="130.0" prefWidth="202.0" text="Средний уровень">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="massMediumHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="massMediumLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="massMediumPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="massMediumBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" prefHeight="0.0" prefWidth="202.0" text="Сложный уровень">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="201.0">
+                                                         <children>
+                                                            <Button fx:id="massHardHandsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Руки" />
+                                                            <Button fx:id="massHardLegsButton" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Ноги" />
+                                                            <Button fx:id="massHardPressButton" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Пресс" />
+                                                            <Button fx:id="massHardBreastButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Грудь" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </TitledPane>
+                                             </panes>
+                                          </Accordion>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <TextArea fx:id="textArea" layoutX="261.0" layoutY="102.0" prefHeight="298.0" prefWidth="438.0" />
+   </children>
+</AnchorPane>
