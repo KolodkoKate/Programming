@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: SandyBrown;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.ProductsController">
+   <children>
+      <TextField fx:id="sumCaloriesField" layoutX="436.0" layoutY="175.0" prefHeight="34.0" prefWidth="150.0" promptText="Текущее кол-во калорий" />
+      <TextField fx:id="maxCaloriesField" layoutX="435.0" layoutY="239.0" prefHeight="34.0" prefWidth="150.0" promptText="Норма" />
+      <Button fx:id="addButton" layoutX="236.0" layoutY="360.0" mnemonicParsing="false" style="-fx-background-color: Coral;" text="Добавить">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Button>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="69.0" style="-fx-background-color: white;" text="Назад">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Button>
+      <ListView fx:id="listProductsView" layoutX="10.0" layoutY="29.0" prefHeight="326.0" prefWidth="206.0" />
+      <ListView fx:id="currentListProductsBreakfastView" layoutX="224.0" layoutY="29.0" prefHeight="326.0" prefWidth="200.0" />
+      <TitledPane animated="false" layoutX="436.0" layoutY="6.0" prefHeight="106.0" prefWidth="150.0" text="Выберите тип">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="81.0" prefWidth="149.0">
+               <children>
+                  <ToggleButton fx:id="breakfastButton" layoutY="1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Завтрак">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></ToggleButton>
+                  <ToggleButton fx:id="lunchButton" layoutX="-1.0" layoutY="27.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Обед">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></ToggleButton>
+                  <ToggleButton fx:id="dinnerButton" layoutX="-1.0" layoutY="53.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Ужин">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></ToggleButton>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </TitledPane>
+      <Label layoutX="79.0" layoutY="3.0" prefHeight="27.0" prefWidth="82.0" text="Продукты:">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="6.0" prefHeight="18.0" prefWidth="194.0" text="Текущий список прoдуктов:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" layoutX="332.0" layoutY="360.0" mnemonicParsing="false" style="-fx-background-color: Coral;" text="Удалить">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Button>
+      <ListView fx:id="currentListProductsLunchView" layoutX="224.0" layoutY="29.0" prefHeight="326.0" prefWidth="200.0" />
+      <ListView fx:id="currentListProductsDinnerView" layoutX="224.0" layoutY="29.0" prefHeight="326.0" prefWidth="200.0" />
+      <Label layoutX="437.0" layoutY="151.0" prefHeight="22.0" prefWidth="149.0" text="Текущая сумма калорий">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <Label layoutX="447.0" layoutY="217.0" prefHeight="22.0" prefWidth="127.0" text="Максимум калорий">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <Label fx:id="incorrectProductLabel" layoutX="448.0" layoutY="281.0" prefHeight="22.0" prefWidth="127.0" text="Продукт не выбран" textFill="#f50808">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="incorrectCaloriesLabel" layoutX="442.0" layoutY="128.0" prefHeight="22.0" prefWidth="140.0" text="Превышение калорий" textFill="#f50808">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

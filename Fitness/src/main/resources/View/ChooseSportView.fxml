@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.ChooseSportController">
+   <children>
+      <Button fx:id="fitnessButton" mnemonicParsing="false" prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: limegreen;" text="Fitness" textFill="#921fd5">
+         <font>
+            <Font name="Chiller" size="67.0" />
+         </font>
+      </Button>
+      <Button fx:id="gymButton" layoutX="226.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="239.0" text="Gym" textFill="#3369d5">
+         <font>
+            <Font name="Chiller" size="90.0" />
+         </font>
+      </Button>
+      <Button fx:id="relaxButton" layoutX="460.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="239.0" style="-fx-background-color: MediumVioletRed;" text="Relax" textFill="#59e320">
+         <font>
+            <Font name="Chiller" size="79.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="352.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="82.0" style="-fx-background-color: white;" text="Назад" textFill="#010101">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

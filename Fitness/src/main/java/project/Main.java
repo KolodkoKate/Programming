@@ -27,6 +27,7 @@ public class Main extends Application {
     private static Logger logger = LogManager.getLogger();
     public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException, TransformerException {
         logger.info("Application started");
+        
         try {
             FileService service = new FileService();
         }catch (IOException e)

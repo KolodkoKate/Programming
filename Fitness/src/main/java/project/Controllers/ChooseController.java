@@ -19,20 +19,17 @@ public class ChooseController {
     private URL location;
 
     @FXML
-    private Button fitnessButton;
+    private Button sportButton;
 
     @FXML
-    private Button gymButton;
-
-    @FXML
-    private Button relaxButton;
+    private Button dailyMealButton;
 
     @FXML
     void initialize() {
-        fitnessButton.setOnAction(event ->{
-            fitnessButton.getScene().getWindow().hide();
+        sportButton.setOnAction(event ->{
+            sportButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/View/FitnessView.fxml"));
+            loader.setLocation(getClass().getResource("/View/ChooseSportView.fxml"));
             try {
                 loader.load();
             } catch (IOException e) {
@@ -43,24 +40,10 @@ public class ChooseController {
             stage.setScene(new Scene(root));
             stage.show();
         });
-        gymButton.setOnAction(event ->{
-            gymButton.getScene().getWindow().hide();
+        dailyMealButton.setOnAction(event ->{
+            dailyMealButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/View/GymView.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
-        });
-        relaxButton.setOnAction(event ->{
-            relaxButton.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/View/RelaxView.fxml"));
+            loader.setLocation(getClass().getResource("/View/DailyMealView.fxml"));
             try {
                 loader.load();
             } catch (IOException e) {

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="602.0" style="-fx-background-color: plum;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.DailyMealController">
+   <children>
+      <Button fx:id="chooseProductsButton" layoutX="438.0" layoutY="360.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="146.0" style="-fx-background-color: DarkOrange;" text="Питание">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Button>
+      <Button fx:id="sumButton" layoutX="254.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: LightSkyBlue;" text="Вычислить">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Button>
+      <TextField fx:id="ageField" layoutX="222.0" layoutY="84.0" prefHeight="34.0" prefWidth="156.0" promptText="Возраст" />
+      <TextField fx:id="weightField" layoutX="223.0" layoutY="127.0" prefHeight="34.0" prefWidth="156.0" promptText="Вес(кг)" />
+      <TextField fx:id="heightField" layoutX="222.0" layoutY="166.0" prefHeight="34.0" prefWidth="156.0" promptText="Рост(см)" />
+      <Label layoutX="182.0" layoutY="209.0" text="Уровень физической активности:">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Label>
+      <Label layoutX="161.0" layoutY="14.0" prefHeight="26.0" prefWidth="278.0" text="Подсчет суточной нормы калорий" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Label>
+      <Button fx:id="backButton" layoutX="21.0" layoutY="361.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: white;" text="Назад">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Button>
+      <RadioButton fx:id="manButton" layoutX="193.0" layoutY="54.0" mnemonicParsing="false" text="Мужчина">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="womanButton" layoutX="302.0" layoutY="54.0" mnemonicParsing="false" text="Женщина">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></RadioButton>
+      <Label fx:id="incorrectInputLabel" layoutX="243.0" layoutY="335.0" prefHeight="26.0" prefWidth="112.0" text="Неккоректный ввод" textFill="#ff0000" />
+      <RadioButton fx:id="noneButton" layoutX="111.0" layoutY="239.0" mnemonicParsing="false" text="Отсутствует">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="littleButton" layoutX="244.0" layoutY="239.0" mnemonicParsing="false" text="Небольшая">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="mediumButton" layoutX="377.0" layoutY="239.0" mnemonicParsing="false" text="Средняя">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="fullButton" layoutX="177.0" layoutY="265.0" mnemonicParsing="false" text="Полноценная">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="hardButton" layoutX="319.0" layoutY="265.0" mnemonicParsing="false" text="Изнуряющая">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></RadioButton>
+      <TextField fx:id="resultField" alignment="CENTER" layoutX="218.0" layoutY="291.0" prefHeight="44.0" prefWidth="167.0" promptText="Результат" />
+   </children>
+</AnchorPane>

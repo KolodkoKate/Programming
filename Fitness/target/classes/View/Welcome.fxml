@@ -8,23 +8,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.WelcomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: DarkCyan;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.WelcomeController">
    <children>
       <AnchorPane layoutY="139.0" prefHeight="258.0" prefWidth="700.0" style="-fx-background-color: white;">
          <children>
-            <TextField fx:id="loginField" layoutX="206.0" layoutY="95.0" prefHeight="36.0" prefWidth="276.0" promptText="Логин" style="-fx-border-color: green; -fx-border-radius: 7;" />
-            <Label layoutX="244.0" layoutY="14.0" prefHeight="36.0" prefWidth="211.0" text="Авторизация" textFill="#4c3737">
+            <TextField fx:id="loginField" layoutX="208.0" layoutY="82.0" prefHeight="46.0" prefWidth="276.0" promptText="Логин" style="-fx-border-color: green; -fx-border-radius: 7;" />
+            <Label layoutX="244.0" prefHeight="36.0" prefWidth="211.0" text="Авторизация" textFill="#4c3737">
                <font>
                   <Font name="Chiller" size="33.0" />
                </font>
             </Label>
-            <PasswordField fx:id="passwordField" layoutX="208.0" layoutY="148.0" prefHeight="36.0" prefWidth="276.0" promptText="Пароль" style="-fx-border-color: green; -fx-border-radius: 7;" />
-            <Button fx:id="enterButton" layoutX="277.0" layoutY="205.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" text="Войти" textFill="#2e1111">
+            <PasswordField fx:id="passwordField" layoutX="208.0" layoutY="139.0" prefHeight="46.0" prefWidth="276.0" promptText="Пароль" style="-fx-border-color: green; -fx-border-radius: 7;" />
+            <Button fx:id="enterButton" layoutX="285.0" layoutY="198.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: RoyalBlue;" text="Войти" textFill="#faf8f8">
                <font>
                   <Font size="21.0" />
                </font>
             </Button>
-            <Text fx:id="correctInput" fill="#bd0000" layoutX="494.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неправильный логин или пароль" />
+            <Text fx:id="correctInput" fill="#bd0000" layoutX="244.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Неправильный логин или пароль" />
          </children>
       </AnchorPane>
       <Label layoutX="244.0" layoutY="7.0" prefHeight="112.0" prefWidth="211.0" text="Welcome" textFill="#f2f0f0">
@@ -32,9 +32,9 @@
             <Font name="Chiller" size="79.0" />
          </font>
       </Label>
-      <Button fx:id="registrationButton" layoutX="474.0" layoutY="28.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="211.0" style="-fx-background-color: #F39C63;" text="Региристрация" textFill="#fafafa">
+      <Button fx:id="registrationButton" layoutX="467.0" layoutY="25.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="211.0" style="-fx-background-color: #F39C63;" text="Регистрация" textFill="#fafafa">
          <font>
-            <Font name="Chiller" size="17.0" />
+            <Font name="Arial" size="20.0" />
          </font>
       </Button>
    </children>

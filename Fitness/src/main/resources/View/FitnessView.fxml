@@ -8,38 +8,61 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.FitnessController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: LimeGreen;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.FitnessController">
    <children>
-      <Button fx:id="backButton" layoutX="14.0" layoutY="354.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="62.0" text="Назад">
+      <Button fx:id="backButton" layoutX="14.0" layoutY="354.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="74.0" text="Назад">
          <font>
-            <Font name="Chiller" size="15.0" />
+            <Font name="Arial" size="15.0" />
          </font>
       </Button>
-      <Label layoutX="473.0" layoutY="-41.0" prefHeight="138.0" prefWidth="226.0" text="Fitness" textFill="#2396af">
+      <Label layoutX="485.0" layoutY="-34.0" prefHeight="138.0" prefWidth="226.0" text="Fitness" textFill="#c017cf">
          <font>
-            <Font name="Chiller" size="96.0" />
+            <Font name="Chiller" size="77.0" />
          </font>
       </Label>
       <Accordion>
         <panes>
-          <TitledPane animated="false" prefHeight="160.0" prefWidth="202.0" text="Программа упражнений" textFill="#2a4e97">
+          <TitledPane animated="false" prefHeight="178.0" prefWidth="222.0" style="-fx-background-color: White;" text="Программа упражнений" textFill="#2a4e97">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="eastButton" layoutX="-1.0" layoutY="103.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Восточные единоборства " />
-                        <Button fx:id="aerobicButton" layoutY="1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Аэробика" />
-                        <Button fx:id="strengthButton" layoutY="27.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Силовые" />
-                        <Button fx:id="healthButton" layoutY="53.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Оздоровительные" />
-                        <Button fx:id="danceButton" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Танцевальные" />
+                        <Button fx:id="eastButton" layoutX="-1.0" layoutY="103.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="222.0" style="-fx-background-color: transparent;" text="Восточные единоборства ">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="aerobicButton" layoutY="1.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="222.0" style="-fx-background-color: transparent;" text="Аэробика">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="strengthButton" layoutY="27.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="222.0" style="-fx-background-color: transparent;" text="Силовые">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="healthButton" alignment="CENTER" layoutY="53.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="222.0" style="-fx-background-color: transparent;" text="Оздоровительные">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="danceButton" layoutY="77.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="222.0" style="-fx-background-color: transparent;" text="Танцевальные">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Button>
                      </children>
                   </AnchorPane>
             </content>
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
           </TitledPane>
         </panes>
       </Accordion>
-      <TextArea fx:id="textArea" layoutX="253.0" layoutY="81.0" prefHeight="319.0" prefWidth="447.0">
+      <TextArea fx:id="textArea" layoutX="240.0" layoutY="81.0" prefHeight="306.0" prefWidth="447.0">
          <font>
-            <Font size="11.0" />
+            <Font name="Arial" size="15.0" />
          </font></TextArea>
    </children>
 </AnchorPane>
