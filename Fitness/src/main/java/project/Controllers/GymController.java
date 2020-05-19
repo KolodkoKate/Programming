@@ -149,12 +149,7 @@ public class GymController {
             stage.show();
         });
 
-
-        //
-        //Diet buttons
-        //
-
-
+        textArea.setEditable(false);
         dietEasyHandsButton.setOnAction(event -> {
             textArea.setText("1. Подъемы и опускания в планке\n" +
                     "  Встаньте в планку. Руки на уровне плеч. \n" +

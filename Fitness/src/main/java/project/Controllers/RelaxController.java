@@ -52,6 +52,7 @@ public class RelaxController {
             stage.setScene(new Scene(root));
             stage.show();
         });
+        textArea.setEditable(false);
         massageButton.setOnAction(event -> {
             textArea.setText("1.Спортивный.\n" +
                     "Вариант применяется в качестве профилактики травматизма и подготовке к выступлениям у профессиональных спортсменов,\n" +

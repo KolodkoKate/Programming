@@ -56,6 +56,7 @@ public class FitnessController {
             stage.setScene(new Scene(root));
             stage.show();
         });
+        textArea.setEditable(false);
         aerobicButton.setOnAction(event -> {
             textArea.setText("Упражнение 1- Упражнение для рук\n" +
                     "Примите упор лежа, ноги прямые. Руки расставлены чуть шире плеч, спина должна быть прямой.\n" +

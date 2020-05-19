@@ -100,6 +100,7 @@ public class DailyMealController {
         ToggleGroup genderGroup = new ToggleGroup();
         manButton.setToggleGroup(genderGroup);
         womanButton.setToggleGroup(genderGroup);
+        womanButton.fire();
 
         ToggleGroup loadGroup = new ToggleGroup();
         noneButton.setToggleGroup(loadGroup);
@@ -107,6 +108,8 @@ public class DailyMealController {
         mediumButton.setToggleGroup(loadGroup);
         fullButton.setToggleGroup(loadGroup);
         hardButton.setToggleGroup(loadGroup);
+        noneButton.fire();
+        chooseProductsButton.disableProperty().bind(resultField.textProperty().isEmpty());
 
 
         sumButton.setOnAction(event ->{
